@@ -3,7 +3,14 @@ import { StyleSheet, Text, View , TextInput, Button} from 'react-native';
 import Title from './src/components/Index';
 
 export default function App() {
+  const [heigth, setHeight] = useState(null)
+  const [width, setWidth] = useState(null)
+  const [textButton, setTextButton] = useState(null)
+  const [messageImc, setMessageImc] = useState(null)
+  const [imc, setImc] = useState(null)
+  
   return (
+
     <View style={styles.container}>
       <Text> Teste de IMC </Text>
       <StatusBar style="auto" />
