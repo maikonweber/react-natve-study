@@ -6,14 +6,20 @@ import { useState, useEffect } from "react";
 export default function App() {
   const [heigth, setHeight] = useState(null);
   const [width, setWidth] = useState(null);
+   const [weigth, setWeigth] = useState(null);
   const [textButton, setTextButton] = useState(null);
   const [messageImc, setMessageImc] = useState(null);
   const [imc, setImc] = useState(null);
 
-  useEffect(() => {
-    setImc(heigth / width);
-    messageImc("Seu Imc é ")
-  }, [textButton]);
+  function validadeIMC() {
+    return setImc((weigth * heigth) / width).toFixed(2);
+  }
+
+  function validadeIMC(){
+
+  }
+
+  
   return (
     <View style={styles.container}>
       <Text> Teste de IMC </Text>
