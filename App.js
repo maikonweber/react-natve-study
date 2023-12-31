@@ -3,6 +3,7 @@ import FlatCards from "./src/components/FlatCards";
 import { useState, useEffect } from "react";
 import React from "react";
 import ElevateCards from "./src/components/ElevateCards/ElevateCards";
+import FancyCard from "./src/components/FancyCard";
 
 export default function App() {
 
@@ -12,6 +13,7 @@ export default function App() {
       <FlatCards/>
       <ElevateCards/>
       </ScrollView>
+      <FancyCard/>
     </SafeAreaView>
   );
 }
